@@ -25,7 +25,7 @@
                     <archive>
                         <!--<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>-->
                         <manifest>
-                            <mainClass>l01_Maven_intro.Main</mainClass>
+                            <mainClass>ProxyChecker.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
