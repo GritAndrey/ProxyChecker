@@ -22,6 +22,7 @@ public class CheckProxyThread extends Thread {
                 Proxy proxy = new Proxy(Proxy.Type.HTTP,new InetSocketAddress(ip,port));
                 URL url = new URL("https://vozhzhaev.ru/test.php");
                 URLConnection urlConnection = url.openConnection(proxy);
+                urlConnection.setConnectTimeout(1000);
                 InputStream is = urlConnection.getInputStream();
                 InputStreamReader reader = new InputStreamReader(is);
                 int i;
