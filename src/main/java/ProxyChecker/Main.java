@@ -20,12 +20,12 @@ public class Main {
                 else if (i == 10) {
                     String ip = proxy.split(":")[0];
                     String port = proxy.split(":")[1];
-                    CheckProxyThread checkProxyThread = new CheckProxyThread(ip,Integer.parseInt(port));
-                    checkProxyThread.start();
+//                    CheckProxyThread checkProxyThread = new CheckProxyThread(ip,Integer.parseInt(port));
+//                    checkProxyThread.start();
 
                     //Второй способ
-//                    Thread checkProxyRunnable = new Thread(new CheckProxyRunnable(ip, Integer.parseInt(port)));
-//                    checkProxyRunnable.start();
+                     Thread checkProxyRunnable = new Thread(new CheckProxyRunnable(ip, Integer.parseInt(port)));
+                     checkProxyRunnable.start();
 
                     //третий способ
 //                    Thread thread = new Thread(new Runnable() {
