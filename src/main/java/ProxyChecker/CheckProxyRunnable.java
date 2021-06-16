@@ -1,6 +1,4 @@
 package ProxyChecker;
-
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -8,11 +6,7 @@ import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 
-import static ProxyChecker.Main.RESULTPATH;
 
 public class CheckProxyRunnable implements Runnable {
     String ip;
